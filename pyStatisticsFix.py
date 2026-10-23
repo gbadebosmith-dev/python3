@@ -26,13 +26,6 @@ class cl_Stats:
     def fn_harmonic_mean(self):
         return st.harmonic_mean(varList, varList2)
 
-    def fn_kde(self):
-        varkde = st.kde(varList, varInteger)
-        return varkde(varInteger)
-
-    def fn_linear_regression(self):
-        return st.linear_regression(varList, varList2)
-
     def fn_mean(self):
         return st.mean(varList)
 
@@ -60,9 +53,6 @@ class cl_Stats:
     def fn_pvariance(self):
         return st.pvariance(varList)
 
-    def fn_quantiles(self):
-        return st.quantiles(varList)
-
     def fn_stdev(self):
         return st.stdev(varList)
 
@@ -76,8 +66,6 @@ print(cl_functions.fn_covariance())
 print(cl_functions.fn_fast_mean())
 print(cl_functions.fn_geometric_mean())
 print(cl_functions.fn_harmonic_mean())
-print(cl_functions.fn_kde())
-print(cl_functions.fn_linear_regression())
 print(cl_functions.fn_mean())
 print(cl_functions.fn_median())
 print(cl_functions.fn_median_high())
@@ -87,6 +75,5 @@ print(cl_functions.fn_mode())
 print(cl_functions.fn_multi_mode())
 print(cl_functions.fn_pstdev())
 print(cl_functions.fn_pvariance())
-print(cl_functions.fn_quantiles())
 print(cl_functions.fn_stdev())
 print(cl_functions.fn_variance())
